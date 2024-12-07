@@ -1,0 +1,100 @@
+/* Base styles */
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #0e0d0d;
+  }
+  
+  .logo img {
+    width: 100px;
+  }
+  
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav-links ul li a {
+    text-decoration: none;
+    color: #fffcfc;
+    font-weight: bold;
+  }
+  
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .phone button {
+    padding: 8px 12px;
+    background-color: #e5e9ec;
+    color: #1b1a1a;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    .nav-links {
+      position: absolute;
+      top: 60px;
+      right: -100%;
+      height: 100vh;
+      background-color: #131212;
+      color: #fff6f6;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: right 0.3s ease;
+    }
+  
+    .nav-links.open {
+      right: 0;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .phone {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      width: 80px;
+    }
+  
+    .nav-links ul li a {
+      font-size: 16px;
+    }
+  
+    .nav-links {
+      width: 100%;
+    }
+  
+    .phone button {
+      padding: 6px 10px;
+    }
+  }
+  
