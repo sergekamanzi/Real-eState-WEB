@@ -1,0 +1,103 @@
+/* hero.css */
+.main-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+    background-image: url('/background.jpg'); /* Add background image if needed */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    height: 60vh;
+  }
+  
+  .main-hero button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .main-hero h2 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+  
+  .main-hero form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .main-hero input {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    height: 20px;
+    outline: none;
+  }
+  
+  .main-hero form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1b52ab;
+    color: white;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin-top: 1px;
+  }
+  
+  @media (max-width: 768px) {
+    .main-hero {
+      height: 250px;
+    }
+    .main-hero h2 {
+      font-size: 23px;
+    }
+  
+    .main-hero input {
+      width: 80%;
+      outline: none;
+    }
+  
+    .main-hero form {
+      flex-direction: row;
+
+    }
+  
+    .main-hero form input {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .main-hero {
+      height: 250px;
+    }
+
+    .main-hero h2 {
+      font-size: 18px;
+    }
+    .main-hero button {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+
+    .main-hero form {
+      flex-direction: row;
+      gap: 0px;
+    }
+
+    .main-hero form input {
+      outline: none;
+    }    
+  }
+  
