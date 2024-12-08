@@ -1,0 +1,161 @@
+/* General Styling */
+.main-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #0e0e0e;
+  font-family: sans-serif;
+}
+
+.logo img {
+  width: 120px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #f6f6f6;
+  font-weight: 500;
+}
+
+.btn button {
+  padding: 10px 20px;
+  background-color:transparent;
+  color: white;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.btn button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Menu Styling */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fffdfd;
+  transition: 0.3s;
+}
+
+.nav-links {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* Show the hamburger menu on smaller screens */
+  .hamburger {
+    display: flex;
+  }
+
+  .main-navbar {
+    background-color: #181717;
+  }
+
+  /* Hide the nav links by default */
+  .nav-links {
+    position: absolute;
+    top: 84px;
+    left: 242px;
+    width: 50%;
+    height: 100vh;
+    background-color: #181717;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+  }
+
+  .nav-links ul li a {
+    color: #fff;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 30px;
+    margin-top: -200px;
+  }
+
+  /* Show the menu when open */
+  .nav-links.active {
+    display: flex;
+  }
+
+  /* Change hamburger to a close icon */
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(7px);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px);
+  }
+
+  /* Adjust button for smaller screens */
+  .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+  }
+
+  .hamburger .bar {
+    margin-left: 150px;
+  }
+}
+
+/* Additional media query for very small screens (max-width 480px) */
+@media (max-width: 480px) {
+  /* Reduce logo size for small screens */
+  .logo img {
+    width: 80px;
+  }
+
+  /* Reduce padding and margins for compact screens */
+  .main-navbar {
+    padding: 10px 15px;
+    width: 400px;
+  }
+
+  /* Adjust button size */
+  .btn button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /*  nav links */
+  .nav-links{
+    position: absolute;
+    top: 64px;
+    left: 215px;
+  }
+
+  /* Make nav links more compact */
+  .nav-links ul {
+    gap: 60px;
+    position: absolute;
+    top: 84px;
+  }
+
+  /* Ensure the hamburger icon is slightly larger */
+  .hamburger .bar {
+    width: 30px;
+    margin-left: 150px;
+  }
+}
