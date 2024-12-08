@@ -1,0 +1,136 @@
+.main-listings {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .main-listings h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #294d99;
+  }
+  
+  .main-listings p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+  
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .cards {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    gap: 1rem;
+  }
+  
+  .card-lists {
+    flex: 0 0 30%;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card-lists:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-lists img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .card-text h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #333;
+  }
+  
+  .card-text span {
+    font-size: 1.1rem;
+    color: #199f72;
+  }
+
+  
+  
+  .card-icons {
+    display: flex;
+    justify-content: start;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+    align-items: center;
+  }
+  
+  .card-icons p {
+    margin: 0 0.5rem;
+  }
+  
+  .card-icons svg {
+    margin-right: 0.3rem;
+    color: #4a90e2;
+  }
+  
+  /* Navigation Buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .nav-button.left {
+    left: 10px;
+  }
+  
+  .nav-button.right {
+    right: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .card-lists {
+      flex: 0 0 45%;
+    }
+    .card-icons p{
+        font-size: 9px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-lists {
+      flex: 0 0 90%;
+    }
+  
+    .nav-button {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

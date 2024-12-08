@@ -1,0 +1,104 @@
+/* General Styles */
+.main-choose {
+    text-align: center;
+    background-image: url('/choose-back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 50px 20px;
+  }
+  
+  .main-choose h4 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .main-choose p {
+    font-size: 16px;
+    color: #e8e6e6;
+    margin-bottom: 40px;
+  }
+  
+  /* Why Us Container */
+  .choose-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  /* Individual Cards */
+  .whyUs {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .whyUs:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Icons Styling */
+  .whyUs svg {
+    font-size: 40px;
+    color: #23388e; /* Icon color */
+    margin-bottom: 10px;
+  }
+  
+  .whyUs h6 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .whyUs p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive Design for 768px */
+  @media (max-width: 768px) {
+    .choose-info {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+  
+  /* Responsive Design for 480px */
+  @media (max-width: 480px) {
+    .choose-info {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .main-choose h4 {
+      font-size: 24px;
+    }
+  
+    .main-choose p {
+      font-size: 14px;
+    }
+  
+    .whyUs {
+      padding: 15px;
+    }
+  
+    .whyUs svg {
+      font-size: 30px;
+    }
+  
+    .whyUs h6 {
+      font-size: 16px;
+    }
+  
+    .whyUs p {
+      font-size: 12px;
+    }
+  }
+  
