@@ -2,7 +2,7 @@ import './hero.css';
 
 const Hero = () => {
   return (
-    <div className="main-hero">
+    <div className="main-hero" id="home">
       <button>Let us guide your Home</button>
       <h2>DISCOVER A PLACE YOU WILL LOVE<br />TO LIVE</h2>
       <form>

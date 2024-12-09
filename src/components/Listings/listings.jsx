@@ -48,7 +48,7 @@ const Listings = () => {
   };
 
   return (
-    <div className="main-listings">
+    <div className="main-listings" id="listing">
       <h3>Homes For You</h3>
       <p>Based on your view history</p>
       <div className="slider-container">

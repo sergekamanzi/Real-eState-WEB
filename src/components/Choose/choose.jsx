@@ -6,7 +6,7 @@ import { AiFillPropertySafety } from "react-icons/ai";
 
 const choose = () => {
   return (
-    <div className="main-choose">
+    <div className="main-choose" id="service">
         <h4>Why Choose Us</h4>
         <p>choosing us is the best thing you can do.</p>
         <div className="choose-info">

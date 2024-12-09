@@ -6,6 +6,9 @@
   padding: 10px 20px;
   background-color: #0e0e0e;
   font-family: sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .logo img {
@@ -85,6 +88,7 @@
     justify-content: center;
     align-items: center;
     transition: 0.3s;
+    z-index: 1;
   }
 
   .nav-links ul li a {

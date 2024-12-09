@@ -9,7 +9,7 @@ import qw from "/qw.jpg";
 
 const findings = () => {
   return (
-    <div className="main-findings">
+    <div className="main-findings" id="place">
       <h3>Find Properties in These Cities</h3>
       <p>Based on your preferences, we have curated a selection of properties in these cities.</p>
       

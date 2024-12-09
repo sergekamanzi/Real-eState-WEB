@@ -1,11 +1,10 @@
 /* General Styles */
 .main-choose {
     text-align: center;
-    background-image: url('/choose-back.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 50px 20px;
+    background-color: #26437a;
+    padding: 30px 20px;
+    border-radius: 4px;
+    margin: 40px;
   }
   
   .main-choose h4 {
@@ -31,10 +30,7 @@
   
   /* Individual Cards */
   .whyUs {
-    background: #fff;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
   }
@@ -47,19 +43,19 @@
   /* Icons Styling */
   .whyUs svg {
     font-size: 40px;
-    color: #23388e; /* Icon color */
+    color: #f2f2f5; /* Icon color */
     margin-bottom: 10px;
   }
   
   .whyUs h6 {
     font-size: 18px;
     margin: 10px 0;
-    color: #333;
+    color: #fafafa;
   }
   
   .whyUs p {
     font-size: 14px;
-    color: #666;
+    color: #c2bfbf;
   }
   
   /* Responsive Design for 768px */
